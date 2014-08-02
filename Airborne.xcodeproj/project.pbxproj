@@ -36,6 +36,7 @@
 		034A5B510FDC86EB0047DA33 /* CellTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 034A5B4B0FDC86EB0047DA33 /* CellTextField.m */; };
 		034A5B520FDC86EB0047DA33 /* CellTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034A5B4D0FDC86EB0047DA33 /* CellTextView.m */; };
 		034A5B9F0FDC89860047DA33 /* airborne.png in Resources */ = {isa = PBXBuildFile; fileRef = 034A5B9E0FDC89860047DA33 /* airborne.png */; };
+		2BA16A1A198D83F700EF7265 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA16A19198D83F700EF7265 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		034A5B4D0FDC86EB0047DA33 /* CellTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTextView.m; sourceTree = "<group>"; };
 		034A5B9E0FDC89860047DA33 /* airborne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airborne.png; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Airborne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airborne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA16A19198D83F700EF7265 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Airborne/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2BA16A19198D83F700EF7265 /* Images.xcassets */,
 				034A5B1A0FDC86660047DA33 /* scream_02.wav */,
 				034A5B1B0FDC86660047DA33 /* scream_01.wav */,
 				034A5B1C0FDC86660047DA33 /* scream_03.wav */,
@@ -228,9 +231,20 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 32VHBV272C;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Airborne" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA16A1A198D83F700EF7265 /* Images.xcassets in Resources */,
 				034A5B0F0FDC864C0047DA33 /* more.htm in Resources */,
 				034A5B1F0FDC86660047DA33 /* scream_02.wav in Resources */,
 				034A5B200FDC86660047DA33 /* scream_01.wav in Resources */,
@@ -302,16 +317,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Joshua Yudaken";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joshua Yudaken";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Airborne_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Airborne;
-				PROVISIONING_PROFILE = "84A2F426-7313-4FF7-AA53-D8ED51853E77";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "84A2F426-7313-4FF7-AA53-D8ED51853E77";
+				PROVISIONING_PROFILE = "BE7C7160-1AAD-4C16-B09B-C30ED44728A0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BE7C7160-1AAD-4C16-B09B-C30ED44728A0";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Distribution;
 		};
@@ -319,15 +338,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Airborne_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Airborne;
-				PROVISIONING_PROFILE = "84A2F426-7313-4FF7-AA53-D8ED51853E77";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "84A2F426-7313-4FF7-AA53-D8ED51853E77";
+				PROVISIONING_PROFILE = "BE7C7160-1AAD-4C16-B09B-C30ED44728A0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BE7C7160-1AAD-4C16-B09B-C30ED44728A0";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,11 +360,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Airborne_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Airborne;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

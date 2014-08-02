@@ -201,7 +201,7 @@ UIAlertView *savingAlert;
 		comments.text = [comments.text substringToIndex:160];
 	}
 		
-	return YES;
+	return;
 }
 
 #pragma mark - UITableView delegates

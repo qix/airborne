@@ -197,7 +197,7 @@ void interruptionListener(	void *	inClientData,
 	
 	if((error = alGetError()) != AL_NO_ERROR) {
 		printf("Error attaching buffer to source: %x\n", error);
-		exit(1);
+		//exit(1);
 	}	
 }
 

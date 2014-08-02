@@ -100,20 +100,10 @@ NSMutableData *receivedData;
 	
 }
 - (void) pingServer {
-	
-	NSString *post = [[NSString alloc] initWithFormat:@"total=%.2f&best=%.2f&device=%s&model=%s&lmodel=%s&system=%s&version=%s",
-					  [freefallView totalScore],[freefallView bestScore],
-					  [[UIDevice currentDevice].uniqueIdentifier UTF8String],
-					  [[UIDevice currentDevice].model UTF8String],
-					  [[UIDevice currentDevice].localizedModel UTF8String],
-					  [[UIDevice currentDevice].systemName UTF8String],
-					  [[UIDevice currentDevice].systemVersion UTF8String]
-					  ];
-	[self httpRequest:@"https://j.yud.co.za/freefall-iphone/api/ping.php" withPOST:post];
 }
+
 - (BOOL) saveHighscore:(float) score by:(NSString *)name withComment:(NSString *)comment {
-	NSString *post = [[NSString alloc] initWithFormat:@"score=%.2f&name=%s&comment=%s&device=%s",score,[[name stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding] UTF8String], [[comment stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding] UTF8String],[[UIDevice currentDevice].uniqueIdentifier UTF8String]];
-	return [self httpRequest:@"https://blue.ltserv.net/j.yud.co.za/freefall_save.php" withPOST:post];
+
 }
 - (BOOL) getHighscores:(NSString *)section {
 	return [self httpRequest:[[NSString alloc] initWithFormat:@"http://j.yud.co.za/freefall-iphone/api/retr.php?section=%s",[section UTF8String]]];

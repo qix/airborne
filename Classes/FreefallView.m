@@ -136,9 +136,7 @@ UIAcceleration *lastAcceleration = nil;
 }
 
 -(void) drawRect:(CGRect) rect {
-	char buffer[64];
 	CGContextRef c = UIGraphicsGetCurrentContext();
-	sprintf(buffer,"%.1f",best);
 	///CGContextSelectFont(c,"Times-Bold",48,kCGEncodingMacRoman);
 	//CGContextSetCharacterSpacing(c, 10);
 	//CGContextSetTextDrawingMode(c,kCGTextFillStroke);
